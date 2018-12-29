@@ -12,10 +12,12 @@ img {
 
 body {
   display: grid;
+  /* 縦の設定 両サイド20pxの隙間 間1列*/
   grid-template-columns: 20px 1fr 20px;
+  /* 横の設定 5分割する */
   grid-template-rows:
               [head] 100px
-              [titlle] auto
+              [title] auto
               [sub] auto
               [recent] auto
               [foot] 100px;
@@ -28,4 +30,40 @@ body {
 body > * {
   /* 前から2番目、後ろから2番目の間とする */
   grid-column: 2 / -2; 
+}
+
+/* ヘッダー */
+header {
+  grid-row: head;
+}
+
+/* ナビゲーションメニュー */
+nav {
+  grid-row: head;
+}
+
+/* ヒーローイメージ */
+figure {
+  grid-column: 1 / -1;
+  grid-row: title / span 2;
+}
+
+/* タイトル */
+h1 {
+  grid-row: title;
+}
+
+/* サブタイトル */
+p {
+  grid-row: sub;
+}
+
+/* 記事一覧 */
+section {
+  grid-row: recent;
+}
+
+/* フッター */
+footer {
+  grid-row: foot;
 }
