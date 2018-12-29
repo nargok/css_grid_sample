@@ -36,7 +36,9 @@ body > * {
 /* ヘッダー */
 header {
   grid-row: head;
+  /* 横方向の中央 */
   justify-self: center;
+  /* 縦方向の中央 */
   align-self: center;
   font-size: 40px;
   color: #555d6b;
@@ -45,6 +47,18 @@ header {
 /* ナビゲーションメニュー */
 nav {
   grid-row: head;
+  justify-self: center;
+  align-self: end;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  /* 横一列にする */
+  grid-auto-flow: column;
+  grid-column-gap: 20px;
+  column-gap: 20px;
 }
 
 /* ヒーローイメージ */
