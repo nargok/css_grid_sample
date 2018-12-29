@@ -9,3 +9,23 @@ img {
   width: 100%;
   height: auto;
 }
+
+body {
+  display: grid;
+  grid-template-columns: 20px 1fr 20px;
+  grid-template-rows:
+              [head] 100px
+              [titlle] auto
+              [sub] auto
+              [recent] auto
+              [foot] 100px;
+  /* row-gapに対応していない古いブラウザ対応  */
+  grid-row-gap: 20px;
+  row-gap: 20px;
+}
+
+/* パーツの配置 */
+body > * {
+  /* 前から2番目、後ろから2番目の間とする */
+  grid-column: 2 / -2; 
+}
