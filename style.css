@@ -51,7 +51,7 @@ nav {
   align-self: end;
 }
 
-ul {
+nav ul {
   list-style-type: none;
   padding: 0;
   display: grid;
@@ -59,6 +59,17 @@ ul {
   grid-auto-flow: column;
   grid-column-gap: 20px;
   column-gap: 20px;
+}
+
+nav a {
+  color: #666;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ef9504;
 }
 
 /* ヒーローイメージ */
