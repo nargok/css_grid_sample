@@ -24,6 +24,7 @@ body {
   /* row-gapに対応していない古いブラウザ対応  */
   grid-row-gap: 20px;
   row-gap: 20px;
+  font-family: san-serif;
 }
 
 /* パーツの配置 */
@@ -35,6 +36,10 @@ body > * {
 /* ヘッダー */
 header {
   grid-row: head;
+  justify-self: center;
+  align-self: center;
+  font-size: 40px;
+  color: #555d6b;
 }
 
 /* ナビゲーションメニュー */
