@@ -211,6 +211,11 @@ body::after {
   grid-row: kiji;
 }
 
+.fa-clock {
+  color: #888;
+  margin-right: 5px;
+}
+
 /* 記事ページ: サブメニュー */
 .post div {
   grid-row: submenu;
