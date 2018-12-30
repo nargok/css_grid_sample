@@ -150,4 +150,15 @@ section h2 {
 /* フッター */
 footer {
   grid-row: foot;
+  justify-self: center;
+  align-self: center;
+  font-size: 13px;
+}
+
+body::after {
+  content: "";
+  background-color: #eee;
+  grid-column: 1 / -1;
+  grid-row: foot;
+  z-index: -1;
 }
