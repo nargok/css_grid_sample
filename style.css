@@ -177,3 +177,62 @@ body::after {
   grid-row: foot;
   z-index: -1;
 }
+
+/* ======= PC版の設定 ======= */
+
+@media (min-width: 768px) {
+/* PC版：ページ全体の設定 */
+  body {
+    grid-template-columns: 0.2fr repeat(6,1fr) 0.2fr;
+    grid-column-gap: 5%;
+    column-gap: 5%;
+    grid-template-rows:
+                [head] 100px
+                [title sub] auto
+                [recent] auto
+                [foot] 100px;
+  }
+
+  /* ヒーローイメージ */
+  figure.hero {
+    grid-row: title;
+    margin-top: -20px;
+  }
+
+  /* タイトル */
+  h1 {
+    grid-column: 2 / span 3;
+    max-width: 460px;
+  }
+
+  /* サブタイトル */
+  p {
+    grid-column: 5 / span 3;
+    align-self: center;
+  }
+
+  p img {
+    width: 80%;
+    max-width: 460px;
+  }
+
+  /* ヘッダー */
+  header {
+    justify-self: start;
+  }
+
+  /* ナビゲーションメニュー */
+  nav {
+    justify-self: end;
+    align-self: center;
+  }
+
+  /* 記事一覧 */
+  section {
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    column-gap: 20px;
+  }
+}
+
+/* ==== PC版の設定ここまで ==== */
