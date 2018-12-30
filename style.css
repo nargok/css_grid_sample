@@ -128,7 +128,7 @@ figure.hero img {
 }
 
 /* 記事一覧 */
-section {
+section, aside ul {
   grid-row: recent;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -136,7 +136,7 @@ section {
   gap: 20px 10px;
 }
 
-section h3 {
+section h3, aside h3 {
   font-size: 14px;
 }
 
@@ -148,12 +148,12 @@ section h2 {
   text-align: center;
 }
 
-section a {
+section a, aside a {
   color: #000;
   text-decoration: none;
 }
 
-section a:hover {
+section a:hover, aside a:hover {
   text-decoration: underline;
 }
 
@@ -219,6 +219,39 @@ body::after {
 /* 記事ページ: サブメニュー */
 .post div {
   grid-row: submenu;
+}
+
+aside {
+  border: solid 1px #ddd;
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+aside h2 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  color: #888;
+  font-weight: normal;
+  font-family: 'Raleway', sans-serif;
+}
+
+aside p {
+  font-size: 14px;
+}
+
+aside:first-child img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%
+}
+
+aside ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
 }
 
 /* ======= PC版の設定 ======= */
