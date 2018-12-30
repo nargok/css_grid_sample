@@ -89,7 +89,7 @@ figure.hero img {
 }
 
 /* タイトル */
-h1 {
+.top h1 {
   grid-row: title;
   justify-self: center;
   align-self: center;
@@ -103,12 +103,12 @@ h1 {
 }
 
 /* サブタイトル */
-p {
+.top p {
   grid-row: sub;
   text-align: center;
 }
 
-p a {
+.top p a {
   color: #FFF;
   text-decoration: none;
   border: solid 1px #FFF;
@@ -119,11 +119,11 @@ p a {
   background-color: rgba(85, 93, 107, 0.5);
 }
 
-p a:hover {
+.top p a:hover {
   background-color: #ef9504;
 }
 
-p img {
+.top p img {
   width: 250px;
 }
 
@@ -192,6 +192,25 @@ body::after {
   grid-row: kiji;
 }
 
+.post article > * {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: block;
+}
+
+.post article p {
+  line-height: 2;
+}
+
+/* 記事ページ:バー */
+.post::before {
+  content: '';
+  background: #eee;
+  height: 2px;
+  grid-column: 1 / -1;
+  grid-row: kiji;
+}
+
 /* 記事ページ: サブメニュー */
 .post div {
   grid-row: submenu;
@@ -219,18 +238,18 @@ body::after {
   }
 
   /* タイトル */
-  h1 {
+  .top h1 {
     grid-column: 2 / span 3;
     max-width: 460px;
   }
 
   /* サブタイトル */
-  p {
+  .top p {
     grid-column: 5 / span 3;
     align-self: center;
   }
 
-  p img {
+  .top p img {
     width: 80%;
     max-width: 460px;
   }
