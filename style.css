@@ -73,19 +73,56 @@ nav a:hover {
 }
 
 /* ヒーローイメージ */
-figure {
+figure.hero {
   grid-column: 1 / -1;
   grid-row: title / span 2;
+}
+
+figure.hero img {
+  height: 547px;
+  object-fit: cover;  /* 縦長表示をOFF 表示範囲で切り出す */
+  vertical-align: bottom;
+  filter: brightness(70%);
+  z-index: -1;
+  position: relative; /* Edge用の設定 */
 }
 
 /* タイトル */
 h1 {
   grid-row: title;
+  justify-self: center;
+  align-self: center;
+  color: #FFF;
+  font-size: 50px;
+  font-weight: normal;
+  line-height: 1.2;
+  text-shadow: 0 0 5px #444;
+  text-align: center;
 }
 
 /* サブタイトル */
 p {
   grid-row: sub;
+  text-align: center;
+}
+
+p a {
+  color: #FFF;
+  text-decoration: none;
+  border: solid 1px #FFF;
+  padding: 10px 40px;
+  display: inline-block;
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: rgba(85, 93, 107, 0.5);
+}
+
+p a:hover {
+  background-color: #ef9504;
+}
+
+p img {
+  width: 250px;
 }
 
 /* 記事一覧 */
