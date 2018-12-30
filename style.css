@@ -178,6 +178,25 @@ body::after {
   z-index: -1;
 }
 
+/* 記事ページ */
+.post {
+  grid-template-rows:
+              [head] 100px
+              [kiji] auto
+              [submenu] auto
+              [foot] 100px;
+}
+
+/* 記事ページ:記事 */
+.post article {
+  grid-row: kiji;
+}
+
+/* 記事ページ: サブメニュー */
+.post div {
+  grid-row: submenu;
+}
+
 /* ======= PC版の設定 ======= */
 
 @media (min-width: 768px) {
