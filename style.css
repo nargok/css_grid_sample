@@ -50,6 +50,11 @@ header {
   font-family: 'Raleway', sans-serif;
 }
 
+header a {
+  color: inherit;
+  text-decoration: none;
+}
+
 /* ナビゲーションメニュー */
 nav {
   grid-row: head;
