@@ -285,6 +285,31 @@ td {
   background-color: #e8eef9;
 }
 
+/* お問い合わせページ */
+form p {
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+textarea {
+  height: 120px;
+}
+
+input[type="submit"] {
+  background-color: #ffaa00;
+  border: none;
+  -webkit-appearance: none;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+
 /* ======= PC版の設定 ======= */
 
 @media (min-width: 768px) {
@@ -370,6 +395,11 @@ td {
   /* 記事ページ: バー */
   .post::before {
     margin-top: -20px;
+  }
+
+  /* お問い合わせページ */
+  input[type="submit"] {
+    width: 250px;
   }
 }
 
